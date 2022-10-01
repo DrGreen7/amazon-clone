@@ -21,8 +21,10 @@ function Header() {
       </div>
       <div className="header--nav">
         <div className="header--option">
-          <span className="header--optionLineOne">Hello Guest</span>
-          <span className="header--optionLineTwo">Sign In</span>
+          <Link to="/login">
+            <span className="header--optionLineOne">Hello Guest</span>
+            <span className="header--optionLineTwo">Sign In</span>
+          </Link>
         </div>
         <div className="header--option">
           <span className="header--optionLineOne">Returns</span>
@@ -34,7 +36,7 @@ function Header() {
         </div>
       </div>
       <div className="header--optionBasket">
-        <Link to="checkout">
+        <Link to="/checkout">
           <i class="fa-solid fa-cart-shopping fa-2x"></i>
         </Link>
 
